@@ -1,1 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url('./assets/viagem.png');
+    font-family: 'Lobster Two', cursive;
+}
+.corpo{
+  font-family: 'Righteous', cursive;
+}
+.logo{
+  width: 55%;
+  margin-left: 36%;
+}
+
+/*MENU*/
+.menu {
+  list-style-type: none; /*Retira as marcadores da lista*/
+  margin-left: 35vw;
+  margin-top: 0.1vw;
+
+}
+img{ /*Essa é específica pro ícone do submenu*/
+  width: 45%;
+  height: 45%;
+}
+
+.icone{ /*Icones externos*/
+  height: 5%;
+  width: 5%;
+}
+
+.menu li {
+  border-style: none; /*Retiro as bordas e posiciono o menu*/
+  display: inline;
+  position: relative;
+  padding: 20px;
+  line-height: 28px;
+}
+
+.menu li ul{
+  position: absolute;
+  top:40px;         /*Esconde o submenu*/
+  left: -4px;
+  display: none;
+
+}
+
+.menu li:hover ul, .menu li ul li:hover ul, .menu li.over ul, .menu li ul li.over ul{  /*Display pra poder mostrar o submenuy no hover*/
+  display: block;
+  font-size: 0.85555em;
+  padding-left: 7.1px;
+
+  }
+
+/*PARTE CENTRAL*/
+
+  .container{
+    display: flex;
+    background-color: white;
+    padding-top: 1vw;
+    padding-bottom: 20px;
+  }
+  .container > div{
+    flex:1;
+  }
+  .container div{
+    margin: 20px;
+    font-size: 1em;
+  }
+
+/*Footer*/
+  .sticky-footer{
+    background-color: black;
+    padding-bottom: 20px;
+    color:white;
+    margin-top: 10%;
+  }
